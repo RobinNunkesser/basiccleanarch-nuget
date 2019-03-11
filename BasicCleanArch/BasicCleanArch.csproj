@@ -12,9 +12,12 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <PackageId>BasicCleanArch</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
-    <Authors>nunkesser</Authors>
-    <Description>BasicCleanArch</Description>
+    <PackageVersion>0.2.0</PackageVersion>
+    <Authors>Robin Nunkesser</Authors>
+    <Description>Basic clean architecture is a set of helpful protocols for the basic concepts of Clean Architecture like Interactors, Entities, Presenters, and Boundaries.</Description>
+    <PackageLicenseUrl>https://github.com/RobinNunkesser/basiccleanarch-nuget/blob/master/LICENSE.md</PackageLicenseUrl>
+    <Owners>Robin Nunkesser</Owners>
+    <PackageProjectUrl>https://github.com/RobinNunkesser/basiccleanarch-nuget</PackageProjectUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

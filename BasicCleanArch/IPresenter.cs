@@ -1,7 +1,15 @@
 ﻿namespace BasicCleanArch
 {
-    public interface IPresenter<Entity,ViewModel>
+    /// <summary>
+    /// A Presenter is used to get a ViewModel from Entities or other Models.
+    /// </summary>
+    public interface IPresenter<Model,ViewModel>
     {
-        ViewModel present(Entity entity);
+        /// <summary>
+        /// Present the specified model.
+        /// </summary>
+        /// <returns>The ViewModel.</returns>
+        /// <param name="model">The model to present.</param>
+        ViewModel present(Model model);
     }
 }
