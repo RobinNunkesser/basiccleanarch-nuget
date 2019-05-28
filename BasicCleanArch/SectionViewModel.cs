@@ -23,7 +23,6 @@ namespace BasicCleanArch
                 }
             }
         }
-
         public string ShortName
         {
             get => _shortName;
