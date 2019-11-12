@@ -35,13 +35,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IDisplayer.cs" />
-    <Compile Include="IPresenter.cs" />
-    <Compile Include="IUseCase.cs" />
-    <Compile Include="MustInitialize.cs" />
-    <Compile Include="Result.cs" />
-    <Compile Include="ViewModel.cs" />
-    <Compile Include="SectionViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />

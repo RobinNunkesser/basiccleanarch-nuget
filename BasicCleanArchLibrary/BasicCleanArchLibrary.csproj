@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>BasicCleanArch</PackageId>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Authors>Robin Nunkesser</Authors>
+    <Description>Basic clean architecture is a set of helpful protocols for the basic concepts of Clean Architecture like Interactors, Entities, Presenters, and Boundaries.</Description>
+    <Owners>Robin Nunkesser</Owners>
+    <PackageProjectUrl>https://github.com/RobinNunkesser/basiccleanarch-nuget</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/RobinNunkesser/basiccleanarch-nuget/blob/master/LICENSE.md</PackageLicenseUrl>
+  </PropertyGroup>
+
+</Project>
