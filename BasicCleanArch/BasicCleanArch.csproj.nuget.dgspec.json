@@ -1,0 +1,36 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/nunkesser/ISD/artifacts/basiccleanarch-nuget/BasicCleanArch/BasicCleanArch.csproj": {}
+  },
+  "projects": {
+    "/Users/nunkesser/ISD/artifacts/basiccleanarch-nuget/BasicCleanArch/BasicCleanArch.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nunkesser/ISD/artifacts/basiccleanarch-nuget/BasicCleanArch/BasicCleanArch.csproj",
+        "projectName": "BasicCleanArch",
+        "projectPath": "/Users/nunkesser/ISD/artifacts/basiccleanarch-nuget/BasicCleanArch/BasicCleanArch.csproj",
+        "projectJsonPath": "/Users/nunkesser/ISD/artifacts/basiccleanarch-nuget/BasicCleanArch/project.json",
+        "packagesPath": "/Users/nunkesser/.nuget/packages/",
+        "projectStyle": "ProjectJson",
+        "configFilePaths": [
+          "/Users/nunkesser/.config/NuGet/NuGet.Config"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        }
+      },
+      "dependencies": {
+        "Microsoft.NETCore.Portable.Compatibility": "[1.0.1, )",
+        "NETStandard.Library": "[1.6.0, )",
+        "NuGet.Build.Packaging": {
+          "target": "Package",
+          "version": "[0.2.2, )"
+        }
+      },
+      "frameworks": {
+        "netstandard1.5": {}
+      }
+    }
+  }
+}

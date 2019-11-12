@@ -16,24 +16,21 @@ namespace BasicCleanArch
             get => _longName;
             set
             {
-                if (_longName != value)
-                {
-                    _longName = value;
-                    OnPropertyChanged(new PropertyChangedEventArgs("LongName"));
-                }
+                if (_longName == value) return;
+                _longName = value;
+                OnPropertyChanged(new PropertyChangedEventArgs("LongName"));
             }
         }
+        
         public string ShortName
         {
             get => _shortName;
             set
             {
-                if (_shortName != value)
-                {
-                    _shortName = value;
-                    OnPropertyChanged(
-                        new PropertyChangedEventArgs("ShortName"));
-                }
+                if (_shortName == value) return;
+                _shortName = value;
+                OnPropertyChanged(
+                    new PropertyChangedEventArgs("ShortName"));
             }
         }
     }

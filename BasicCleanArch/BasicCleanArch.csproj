@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -9,15 +8,15 @@
     <OutputType>Library</OutputType>
     <RootNamespace>BasicCleanArch</RootNamespace>
     <AssemblyName>BasicCleanArch</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
     <PackageId>BasicCleanArch</PackageId>
-    <PackageVersion>0.2.0</PackageVersion>
+    <PackageVersion>1.0.0</PackageVersion>
     <Authors>Robin Nunkesser</Authors>
     <Description>Basic clean architecture is a set of helpful protocols for the basic concepts of Clean Architecture like Interactors, Entities, Presenters, and Boundaries.</Description>
     <PackageLicenseUrl>https://github.com/RobinNunkesser/basiccleanarch-nuget/blob/master/LICENSE.md</PackageLicenseUrl>
     <Owners>Robin Nunkesser</Owners>
     <PackageProjectUrl>https://github.com/RobinNunkesser/basiccleanarch-nuget</PackageProjectUrl>
+    <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,8 +44,7 @@
     <Compile Include="SectionViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="project.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets')" />
 </Project>

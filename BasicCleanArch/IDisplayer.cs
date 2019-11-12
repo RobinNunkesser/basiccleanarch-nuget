@@ -1,15 +1,26 @@
-﻿namespace BasicCleanArch
+﻿using System;
+
+namespace BasicCleanArch
 {
     /// <summary>
     /// A Displayer is used to display the result of a use case that changes the
     /// displayed view.
     /// </summary>
-    public interface IDisplayer<T>
+    public interface IDisplayer<in T>
     {
         /// <summary>
-        /// Display the specified result.
+        /// Display the specified value.
         /// </summary>
-        /// <param name="result">The Result to display.</param>
-        void Display(Result<T> result);         
+        /// <param name="value">The value to display.</param>
+        /// <param name="requestCode">optional requestCode to distinguish similar requests.</param>
+        void Display(T value, int requestCode = 0);
+
+        /// <summary>
+        /// Display the specified error.
+        /// </summary>
+        /// <param name="error">The error to display.</param>
+        void Display(Exception error);
+
     }
+    
 }
